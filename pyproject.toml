@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rogii-baseline"
+version = "0.1.0"
+description = "Baseline tooling for the Kaggle ROGII Wellbore Geology Prediction competition."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+]
+
+[project.scripts]
+rogii-audit = "rogii_baseline.audit:main"
+rogii-make-submission = "rogii_baseline.baseline:main_make_submission"
+rogii-oof = "rogii_baseline.oof:main"
+rogii-plot-oof = "rogii_baseline.diagnostics:main"
+rogii-validate = "rogii_baseline.validation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
