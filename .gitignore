@@ -1,0 +1,58 @@
+# Kaggle competition data is reproducible from the competition page.
+/rogii-wellbore-geology-prediction/
+
+# Local data, models, and generated submissions.
+/data/*
+!/data/.gitkeep
+/models/*
+!/models/.gitkeep
+/reports/*
+!/reports/.gitkeep
+/submissions/*
+!/submissions/.gitkeep
+/submission.csv
+/submission_*.csv
+
+# Archives and large derived artifacts.
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.parquet
+*.feather
+*.pkl
+*.joblib
+
+# Python.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Environments.
+.env
+.venv/
+venv/
+env/
+
+# OS/editor noise.
+.DS_Store
+.idea/
+.vscode/
+
+# Public repo hygiene
+.env.*
+!.env.example
+!.env.sample
+node_modules/
+dist/
+build/
+.vercel/
+key.properties
+*.jks
+*.keystore
+*.sqlite
+*.db
+*.pickle
